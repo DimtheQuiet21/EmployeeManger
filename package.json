@@ -1,0 +1,24 @@
+{
+  "name": "employeemanger",
+  "version": "1.0.0",
+  "description": "This app is to track and manage a database with employee information",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "mysql:down": "docker-compose -f mysql.yml down -v",
+    "mysql:stop": "docker-compose -f mysql.yml stop -v",
+    "mysql:start": "docker-compose -f mysql.yml start -v",
+    "mysql:up": "docker-compose -f mysql.yml up -d",
+    "mysql:reset": "npm run mysql:down && npm run mysql:up",
+    "mysql": "mysql -u root -p -h 127.0.0.1 -P 3306"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "inquirer": "^8.2.6",
+    "mysql2": "^3.6.5"
+  }
+}
