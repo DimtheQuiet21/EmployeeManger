@@ -27,14 +27,21 @@ This project allows for the seeding and manipulation of a simple MYSQL database 
 
 MYSQL, NODE JS, and DOCKER are REQUIREMENTs for this application to run properly.
 
-First, install the node modules with "npm install"
-Second, spin up a docker virtual machine with the command 'npm run mysql:up'
-Third, connect to the mysql database using the following command 'npm run mysql'
-Fourth, when prompted enter the password found in the mysql.yml file to access mysql.
-Fifth, now that mysql is running set the mysql source to the schema.sql using the following command, 'source ./db/schema.sql'
-Sixth, seed the database by setting the source again to the seeds.sql using the following command, 'source ./db/seeds.sql'
-Now you are ready to run the application with 'node ."
-Finally, before closing the application entirely, free your port up and kill the docker virutal maching with the command "npm run mysql:down'
+    First, install the node modules with "npm install"
+
+    Second, spin up a docker virtual machine with the command 'npm run mysql:up'
+
+    Third, connect to the mysql database using the following command 'npm run mysql'
+
+    Fourth, when prompted enter the password found in the mysql.yml file to access mysql.
+
+    Fifth, now that mysql is running set the mysql source to the schema.sql using the following command, 'source ./db/schema.sql'
+
+    Sixth, seed the database by setting the source again to the seeds.sql using the following command, 'source ./db/seeds.sql'
+
+    Now you are ready to run the application with 'node ."
+
+    Finally, before closing the application entirely, free your port up and kill the docker virutal maching with the command "npm run mysql:down'
 
 ## Usage Information
 Anyone can use this project however they wish!
