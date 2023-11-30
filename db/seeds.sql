@@ -18,3 +18,15 @@ VALUES (001, "CEO", 250000, 008),
        (006, "Intern", 3.50, 007),
        (007, "Marketing Specialist", 50000, 003),
        (008, "Project Coordinator", 80000, 007);
+
+INSERT INTO employee ( id, first_name, last_name, role_id, manager_id)
+VALUES  (0001, "Bob", "Seger", 001, null),
+        (0002, "Jim", "Brown", 002, 0001),
+        (0003, "Debra", "Green", 004, 0001),
+        (0004, "Gordon", "Levitt", 007, 0002),
+        (0005, "Amy", "Puller", 005, 0002),
+        (0006, "Jack", "White", 003, 0003),
+        (0007, "Susan", "Shoemaker", 008, 0002),
+        (0008, "Darren", "Dedede", 006, 0005),
+        (0009, "Tom", "Tiggidy", 006, 0007),
+        (0010, "Georgia", "Wallace", 006, 0006);
